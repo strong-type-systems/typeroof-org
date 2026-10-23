@@ -46,6 +46,6 @@ jobs:
           publish_dir: ./_site
           # Attaches the custom domain: writes the CNAME file into
           # the deploy branch (the DNS record
-          # app.typeroof.org -> fontbureau.github.io is set).
+          # www.typeroof.org -> strong-type-systems.github.io is set).
           cname: www.typeroof.org
 
