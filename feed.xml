@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>TypeRoof</title>
+  <subtitle>The TypeRoof project.</subtitle>
+  <link href="https://typeroof.org/feed.xml" rel="self" />
+  <link href="https://typeroof.org/" />
+  <updated>2026-10-23T11:44:59Z</updated>
+  <id>https://typeroof.org/</id>
+  <author>
+    <name>Lasse Fister</name>
+    <email>hello@strong-type.systems</email>
+  </author>
+</feed>

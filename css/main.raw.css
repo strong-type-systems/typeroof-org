@@ -1,0 +1,219 @@
+@import url('sts.css');
+
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url("./RobotoSlab[wght].woff2") format("woff2"),
+       url("./RobotoSlab[wght].woff") format("woff"),
+       url("./RobotoSlab[wght].ttf") format('truetype')
+       ;
+    font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Roboto-Delta";
+  src: url("./Roboto-Delta-VF.woff2") format("woff2");
+}
+
+* {
+    --font-size: calc(var(--font-size-em, 1) * var(--doc-font-size-pt, 12));
+    font-size: calc(1pt * var(--font-size));
+    --fieldset-border-color: #b7b4b0;
+    --sidebar-bg-color: #eee;
+    --button-border-color: #999;
+    --button-border-color-hover: #333;
+    --button-bg-color: #fff;
+
+    --font-wdth: 100;
+    --font-wght: 400;
+    font-variation-settings: "opsz" var(--font-size), "wght" var(--font-wght), "wdth" var(--font-wdth);
+}
+
+:root {
+    font-family: "Roboto-Delta", sans-serif;
+    --font-size-em: 1;
+}
+
+:root, body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    container-type: inline-size;
+    container-name: wrapper;
+    background: var(--sidebar-bg-color);
+}
+
+header h1 {
+    & > a {
+        text-decoration: none;
+        color: inherit;
+        font-variation-settings: inherit;
+        &:hover{
+            /* not as dark as the original hover, since the header is
+             * inverted this is a better contrast.
+             */
+            color: var(--button-border-color);
+        }
+    }
+
+
+    --font-size-em: 4;
+    --font-wdth: 70;
+    --font-wght: 800;
+    font-variation-settings: "opsz" var(--font-size), "wght" var(--font-wght), "wdth" var(--font-wdth);
+    text-align: center;
+    padding: 5rem 0;
+    margin: 0;
+    background: black;
+    color: white;
+    border-bottom: 1px solid vat(--fieldset-border-color);
+}
+
+footer {
+    text-align: center;
+    background: white;
+    padding: 2rem 0;
+    border-top: 1px solid var(--fieldset-border-color);
+}
+
+a {
+    text-decoration-style: dotted;
+    text-decoration-thickness: from-font;
+
+    color: #555;
+    &:has(:visited) {
+        color: var(--button-border-color);
+    }
+    &:hover{
+        color: var(--button-border-color-hover);
+    }
+}
+.sts_logo{
+    vertical-align: middle;
+
+    --logo-font-size-numeric: 1.2;
+    --x-compensate-missing-protocol: 1;
+    padding-bottom: 0;
+    --logo-blow-up: 1;
+    margin-left: 0;
+
+    *:is(.sts_logo-strong, .sts_logo-systems)::before {
+        content: none;
+        display: initial;
+    }
+
+    .sts_logo-strong, .sts_logo-type, .sts_logo-systems {
+        top: calc(1em * var(--y-translate));
+        left: calc(1em * var(--x-translate));
+    }
+
+    .sts_logo-wrapper {
+        white-space: normal;
+    }
+
+    .sts_logo-protocol, .sts_logo-hyphen, .sts_logo-dot{
+        display: none;
+    }
+
+    .sts_logo-space {
+        display: initial;
+    }
+
+    .sts_logo-systems {
+        text-align: initial;
+        display: inline;
+    }
+
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' var(--font-size);
+    font-size: calc(1pt * var(--font-size));
+}
+
+.directions {
+    text-align: center;
+    max-width: 40em;
+    margin: 0 auto;
+    & > .button {
+        text-decoration: none;
+        color: black;
+        background-color: var(--button-bg-color);
+        display: inline flex;
+        flex-direction: column;
+        align-items: center;
+        width: 8em;
+        height: 6.5em;
+        margin: .3em;
+        text-align: center;
+        padding: 1.5em .3em .3em .3em;
+        border-radius: .4em;
+
+        text-transform: uppercase;
+        --font-size-em: 1.4;
+        --font-wght: 550;
+        --font-wdth: 80;
+
+        &.documentation {
+            --font-wdth: 25;
+        }
+
+        border: .1em solid var(--button-border-color);
+
+        &:hover{
+            border-color: var(--button-border-color-hover);
+        }
+
+
+        .material-symbols-outlined {
+            display: block;
+            --font-size-em: 5;
+        }
+    }
+}
+.heading_anchor{
+    padding-right: .5rem;
+    margin-left: -1.5rem;
+    text-decoration: none;
+}
+.wrapper > article {
+    max-width: 900px;
+    margin: auto;
+    padding: .5rem .5rem .5rem 2rem;
+
+    h1 {
+        --font-size-em: 2;
+        --font-wght: 700;
+        text-transform: uppercase;
+
+    }
+
+    h2 {
+        --font-size-em: 1.5;
+        --font-wght: 700;
+    }
+
+    h2 {
+        --font-size-em: 1.2;
+        --font-wght: 550;
+    }
+}
+
+@container (width > 800px) {
+    .sts_logo {
+        --logo-font-size-numeric: 2;
+    }
+
+    header h1 {
+        /* expecting 96pt here ~ 800 px width*/
+        --font-size-em: 12;
+        text-fit: shrink; /* if the 96pt assumption doesn't hold */
+    }
+}
+
