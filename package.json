@@ -1,0 +1,36 @@
+{
+  "name": "typeroof-org",
+  "version": "1.0.0",
+  "description": "The landing page of the typeroof project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strong-type-systems/typeroof-org.git"
+  },
+  "author": "Lasse Fister <commander@graphicore.de>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/strong-type-systems/typeroof-org/issues"
+  },
+  "homepage": "https://github.com/strong-type-systems/typeroof-org#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.7",
+    "@11ty/eleventy-navigation": "^1.0.5",
+    "@11ty/eleventy-plugin-rss": "^3.1.0",
+    "markdown-it": "^15.0.3",
+    "markdown-it-github-headings": "^2.0.1",
+    "postcss": "^8.5.31",
+    "postcss-nesting": "^14.0.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "globals": "^17.13.0",
+    "stylelint": "^17.16.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}

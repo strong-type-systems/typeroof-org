@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{%- if title %}{{title}} - {% endif-%}TypeRoof</title>
+        <meta name="viewport" content="initial-scale=1,shrink-to-fit=no">
+        <link
+            rel="alternate"
+            type="application/atom+xml"
+            href="https://typeroof.org/feed.xml" />
+        <script>
+          (function() {
+            function updateRemToPt() {
+              const html = document.documentElement;
+              // Get the root font size in pixels
+              const pxSize = parseFloat(getComputedStyle(html).fontSize);
+              // Convert CSS pixels to CSS points (1px = 0.75pt)
+              const ptSize = pxSize * 0.75;
+              html.style.setProperty('--doc-font-size-pt', `${ptSize}`);
+            }
+            // Run immediately on parse
+            updateRemToPt();
+            // Re-evaluate when the user zooms (browser zoom triggers window resize)
+            window.addEventListener('resize', updateRemToPt);
+          })();
+        </script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=code,diversity_1,help,insert_text,two_pager" />
+        <link
+            rel="stylesheet"
+            href="{% cacheBusterUrl 'css/main.css' %}"/>
+    </head>
+    <body>
+        <div class="wrapper">
+           <header><h1><a href="{{rootPath}}">TypêRoof</a></h1></header>
+                <article class=''>{{ content | safe }}</article>
+            <footer>
+                Created by
+                <div class="sts_logo"><a href="https:strong-type.systems" target="_blank" class="sts_logo-wrapper">
+                    <span class="sts_logo-protocol">https://</span
+                    ><span class="sts_logo-strong">Strong</span
+                    ><span class="sts_logo-type"><span class="sts_logo-space"> </span><span class="sts_logo-hyphen">-</span>Type</span
+                    ><span class="sts_logo-systems"><span class="sts_logo-space"> </span><span class="sts_logo-dot">.</span>Systems</span>
+                </a></div>
+                <br />
+                <a href="{{rootPath}}impressum">Impressum</a>
+            </footer>
+        </div> <!-- wrapper -->
+    </body>
+</html>
+
