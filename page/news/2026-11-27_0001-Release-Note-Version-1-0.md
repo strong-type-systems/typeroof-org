@@ -8,9 +8,10 @@ lead: It's been cooking for a while. Now, with feature parity to the legacy
 
 TypeRoof is built for testing and proofing variable fonts—especially those
 with large design spaces, like parametric fonts. Branching out from its
-original mission, it now includes growing toolsets for building parametric
-layouts and creating complex typographic animations, evolving into a complete,
-general-purpose typography platform.
+original mission, it now includes extensible toolsets for building parametric
+layouts, creating complex typographic animations, and offering a foundation
+for a complete, general-purpose typography platform.
+
 
 ## What's in the box?
 
