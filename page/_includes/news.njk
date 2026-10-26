@@ -5,9 +5,10 @@ layout: typeroof.njk
 Back to <a href="{{rootPath}}news">News</a><br />
 </nav>
 
+
 {% newsDate page %}
 
-# {{ title }}
+<h1>{{title}}</h1>
 
 {%- if lead %}
 <p class="lead">{{lead | safe}}</p>
