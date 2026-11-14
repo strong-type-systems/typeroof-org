@@ -4,12 +4,49 @@
   <subtitle>The TypeRoof project.</subtitle>
   <link href="https://typeroof.org/feed.xml" rel="self" />
   <link href="https://typeroof.org/" />
-  <updated>2026-10-27T00:00:00Z</updated>
+  <updated>2026-11-14T00:00:00Z</updated>
   <id>https://typeroof.org/</id>
   <author>
     <name>Lasse Fister</name>
     <email>hello@strong-type.systems</email>
   </author>
+  <entry>
+    <title>Community Building</title>
+    <link href="https://typeroof.org/news/2026-11-14_0001-Community-Building/" />
+    <updated>2026-11-14T00:00:00Z</updated>
+    <id>https://typeroof.org/news/2026-11-14_0001-Community-Building/</id>
+    <content type="html">
+    &lt;p class=&quot;lead&quot;&gt;We are starting to build an online community around TypeRoof. With the Community Protocol we propose a new concept for how to structure contributions and collaboration.&lt;/p&gt;
+    &lt;p&gt;TypeRoof is meant to grow with its users and contributors. That is
+why we are inviting everyone interested in type tooling, typography,
+and free software to help shape how the project evolves.&lt;/p&gt;
+&lt;p&gt;With the &lt;a href=&quot;https://app.typeroof.org/docs/community/community-protocol/&quot;&gt;Community Protocol (Work In Progress)&lt;/a&gt;
+we propose a new concept for structuring contributions and collaboration,
+built around three phases:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Inception&lt;/strong&gt; — an open playground where anyone can share ideas,
+insights, and rough prototypes as Proposals.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Incubation&lt;/strong&gt; — Proposals are developed into production-ready
+features through mentored collaboration between Builders and
+Maintainers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Distribution&lt;/strong&gt; — autonomous distributions curate and maintain
+their own flavor of TypeRoof, tailored to their users’ needs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The full protocol and the thinking behind it are published on the
+site, and both have their own discussion threads in the new forum:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://app.typeroof.org/docs/community/community-protocol/&quot;&gt;The Community Protocol&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://forum.typeroof.org/t/community-protocol/11&quot;&gt;Protocol discussion thread&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://app.typeroof.org/docs/community/community-protocol-thinking/&quot;&gt;From Code Abundance to Human Agency — the thinking behind the
+protocol&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://forum.typeroof.org/t/from-code-abundance-to-human-agency/12&quot;&gt;Essay discussion thread&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Ready to join?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Come say hello at &lt;a href=&quot;https://forum.typeroof.org&quot;&gt;forum.typeroof.org&lt;/a&gt; —
+the &lt;a href=&quot;https://forum.typeroof.org/c/community-commons/5&quot;&gt;Community Commons category&lt;/a&gt;
+is where we gather and where the community organization is discussed.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Release Version 1.0</title>
     <link href="https://typeroof.org/news/2026-10-27_0001-Release-Note-Version-1-0/" />
